@@ -1,0 +1,15 @@
+apiVersion: build.dev/v1alpha1
+kind: Build
+metadata:
+  name: nodejs-build-buildah
+spec:
+  source:
+    url: https://github.com/kskels/sample-nodejs.git
+    revision: main
+    contextDir: docker-build
+  strategy:
+    name: buildah
+    kind: ClusterBuildStrategy
+  dockerfile: Dockerfile
+  output:
+    image: image-registry.openshift-image-registry.svc:5000/shipwright-builds/sample-nodejs:latest
