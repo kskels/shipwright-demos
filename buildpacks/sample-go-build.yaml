@@ -1,14 +1,14 @@
 apiVersion: build.dev/v1alpha1
 kind: Build
 metadata:
-  name: nodejs-build-buildpacks
+  name: sample-go-build-buildpacks
 spec:
   source:
-    url: https://github.com/kskels/sample-nodejs.git
+    url: https://github.com/kskels/sample-go.git
     contextDir: source-build
     revision: main
   strategy:
     name: buildpacks-v3
     kind: ClusterBuildStrategy
   output:
-    image: image-registry.openshift-image-registry.svc:5000/shipwright-builds/sample-nodejs:latest
+    image: image-registry.openshift-image-registry.svc:5000/shipwright-builds/sample-go:latest

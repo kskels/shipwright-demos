@@ -1,0 +1,7 @@
+apiVersion: build.dev/v1alpha1
+kind: BuildRun
+metadata:
+  name: sample-go-build-buildpacksrun
+spec:
+  buildRef:
+    name: sample-go-build-buildpacks

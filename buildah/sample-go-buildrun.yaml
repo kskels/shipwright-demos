@@ -1,7 +1,7 @@
 apiVersion: build.dev/v1alpha1
 kind: BuildRun
 metadata:
-  name: nodejs-build-buildahrun
+  name: sample-go-build-buildahrun
 spec:
   buildRef:
-    name: nodejs-build-buildah
+    name: sample-go-build-buildah

@@ -1,7 +1,0 @@
-apiVersion: build.dev/v1alpha1
-kind: BuildRun
-metadata:
-  name: nodejs-build-buildpacksrun
-spec:
-  buildRef:
-    name: nodejs-build-buildpacks
